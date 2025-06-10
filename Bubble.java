@@ -13,14 +13,13 @@ public class Bubble {
 		
 		sort(nums);
 		
-		System.out.println("Sorted array is:");
+		System.out.println("Sorted array k is:");
 		for(int i = 0; i < 10; i++)
 			System.out.print(" " + nums[i]);
 		System.out.println();
 	}
 
 	// We are able to define the method that modifies the array in the main class
-	// there's no need to return the array!!
 	public static void sort (int arr[]) {
 		int t, size = arr.length;
 		
@@ -34,4 +33,6 @@ public class Bubble {
 				}
 			}
 	}
+//hellooo
+
 }
