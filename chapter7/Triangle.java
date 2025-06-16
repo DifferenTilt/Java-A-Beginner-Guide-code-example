@@ -16,14 +16,17 @@ public class Triangle extends TwoDShape {
 	}
 	
 	// Override
-	public Triangle() {
-		// TODO Auto-generated constructor stub
-	}
+//	public Triangle() {
+//		
+//	}
 	
-	//Contructor
+	//Constructor
 	Triangle(String s, double w, double h) {
-		setWidth(w);
-		setHeight(h);
+		// Here they work if the constructor in the superclass is not defined
+//		setWidth(w);
+//		setHeight(h);
+		
+		super(w, h);
 		
 		style = s;
 	}
