@@ -10,7 +10,13 @@ public class TwoDShape {
 		System.out.println("Width and height are " + width + " and " + height);
 	}
 	
-	// Accessor method for width and height when they are private
+	// Parameterized constructor.
+	TwoDShape(double w, double h) {
+		width = w;
+		height = h;
+	}
+	
+	// Getter e Setter method for width and height when they are private
 	double getWidth() {
 		return width;
 	}
