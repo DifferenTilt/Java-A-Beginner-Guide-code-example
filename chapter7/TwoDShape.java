@@ -20,7 +20,7 @@ public class TwoDShape {
 	double getWidth() {
 		return width;
 	}
-	
+		
 	double getHeight() {
 		return height;
 	}
