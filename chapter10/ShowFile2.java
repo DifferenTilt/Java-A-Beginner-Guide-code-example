@@ -7,14 +7,13 @@ import java.io.IOException;
 /*
  * Display a text file.
  * 
- * To use this program, specify the name
- * of the file that you want to see.
+ * optimized version of ShowFile
  * For example, to see a file called TEST.TXT,
  * use the following command line.
  * 
  * java ShowFile TEST.TXT
  */
-public class ShowFile {
+public class ShowFile2 {
 
 	public static void main(String[] args) {
 		int i;
@@ -42,13 +41,18 @@ public class ShowFile {
 			} while (i != -1);
 		} catch (IOException e) {
 			System.out.println("Error reading file.");
+		} 
+		//	One advantage to this approach in general is that if the code that accesses a file terminates 
+		//	because of some non-I/O-related exception, the file is still closed by the finally block. 
+		finally {
+			// Close the file on the way out of the try-catch block
+			try {
+				fin.close();
+			} catch (IOException e) {
+				System.out.println("Error closing file.");
+			}
 		}
 		
-		try {
-			fin.close();
-		} catch (IOException e) {
-			System.out.println("Error closing file.");
-		}
 	}
 
 }
