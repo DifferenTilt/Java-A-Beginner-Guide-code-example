@@ -40,12 +40,20 @@ public class CopyFile {
 		} catch (IOException e) {
 			System.out.println("I/O error: " + e);
 		} finally {
+			// First try block to close fin
 			try {
-				if 
-			} catch (Exception e2) {
-				// TODO: handle exception
+				if (fin != null) fin.close();
+			} catch (IOException e) {
+				System.out.println("Error closing input file");
+			}
+			// Second try block to close fout
+			try {
+				if(fout != null) fout.close();
+			} catch (IOException e) {
+				System.out.println("Error closing output file");
 			}
 		}
+		System.out.println("Copy executed succesfully!");
 	}
 
 }
