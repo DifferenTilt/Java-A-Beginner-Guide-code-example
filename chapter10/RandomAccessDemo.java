@@ -2,7 +2,6 @@ package chapter10;
 
 import java.io.IOException;
 import java.io.RandomAccessFile;
-import java.util.Iterator;
 
 // Demonstrate random access files.
 public class RandomAccessDemo {
