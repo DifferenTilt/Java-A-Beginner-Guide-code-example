@@ -1,12 +1,3 @@
-Test File for Java file reading.
-Content is useful and meaningless at the same time!
-
-**************************
-Here's a cow:
-
-\|/          (__)    
-     `\------(oo)
-       ||    (__)
-       ||w--||     \|/
-   \|/
-**************************
+dsvdsvdsavdsv
+asdvdasvasd
+vasdv
