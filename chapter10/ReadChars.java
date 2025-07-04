@@ -9,6 +9,7 @@ public class ReadChars {
 
 	public static void main(String[] args) throws IOException{
 		char c;
+		// Declaration seen above
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
 		System.out.println("enter characters, period to quit.");
