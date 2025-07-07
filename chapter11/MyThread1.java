@@ -1,7 +1,7 @@
 package chapter11;
 
 // Create a thread by implementing Runnable
-public class MyThread implements Runnable{
+public class MyThread1 implements Runnable{
 	private String thrdName;
 	
 	@Override
@@ -19,7 +19,7 @@ public class MyThread implements Runnable{
 	}
 	
 	// Constructor from the name
-	public MyThread(String thrdName) {
+	public MyThread1(String thrdName) {
 		this.thrdName = thrdName;
 	}
 

@@ -1,7 +1,7 @@
 package chapter11;
 
 // Create a thread by implementing Runnable
-public class MyThreadImprov implements Runnable{
+public class MyThread2 implements Runnable{
 
 	Thread thrd;
 	
@@ -16,12 +16,13 @@ public class MyThreadImprov implements Runnable{
 		} catch (InterruptedException e) {
 			System.out.println(thrd.getName() + " interrupted...");
 		}
-		System.out.println(thrd.getName() + " Tterminating.");
+		System.out.println(thrd.getName() + " Terminating.");
 	}
 	
-	// Constructor from the name
-	public MyThreadImprov(String name) {
+	// Constructor and execution at declaration.
+	public MyThread2(String name) {
 		thrd = new Thread(this, name);
+		thrd.start();
 	}
 
 	// Getters and Setter
