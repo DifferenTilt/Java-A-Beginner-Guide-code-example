@@ -3,7 +3,7 @@ package chapter11;
 import java.util.concurrent.atomic.AtomicIntegerArray;
 
 // Use synchronize to control access
-public class SumArray {
+public class SumArray1 {
 	private int sum;
 	
 	// sumArray() is synchronized

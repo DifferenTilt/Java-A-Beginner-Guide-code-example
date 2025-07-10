@@ -4,7 +4,7 @@ import java.util.concurrent.atomic.AtomicIntegerArray;
 
 public class MyThread4 implements Runnable {
 	Thread thread;
-	static SumArray sumArray = new SumArray();
+	static SumArray1 sumArray = new SumArray1();
 	AtomicIntegerArray a;
 	int answer;
 

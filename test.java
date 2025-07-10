@@ -1,9 +1,16 @@
+import java.util.HashMap;
 
 public class test {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
+		HashMap<Integer, Integer> map = new HashMap<>();
+		
+		map.put(null, null);
+		
 	}
 
+	int[] response() {
+		return new int[] {1,2};
+	}
 }
