@@ -1,4 +1,6 @@
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 
 public class test {
 
@@ -8,6 +10,11 @@ public class test {
 		
 		map.put(null, null);
 		
+		List<char[]> ch = new ArrayList<char[]>();
+		
+		String str = "Ciao";
+		
+		ch.add(str.toCharArray());
 	}
 
 	int[] response() {
