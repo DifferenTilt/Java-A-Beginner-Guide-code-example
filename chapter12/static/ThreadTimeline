@@ -1,0 +1,7 @@
+Momento →         T0          T1 (5s)      T2         T3 (2s)    T4         ...
+---------------------------------------------------------------------------
+Main Thread:    🟢 stampa     💤 wait    🟢 stampa     💤 wait    🟢 stampa   ...
+                GREEN                   YELLOW                   RED
+
+Simulatore:     ⏸️ sleep(5s) 🔔 notify  ⏸️ sleep(2s) 🔔 notify  ⏸️ sleep(6s)
+                (GREEN)      (YELLOW)  (RED)        (GREEN)   (YELLOW)
