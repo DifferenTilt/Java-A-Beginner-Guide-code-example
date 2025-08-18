@@ -1,3 +1,4 @@
+package chapter05;
 // This is the Bubble sort.
 public class Bubble {
 
@@ -5,14 +6,14 @@ public class Bubble {
 		// TODO Auto-generated method stub
 
 		int nums[] = {99, -10, 100123, 18, -978, 5623, 463, -9, 287, 49};
-		
+
 		System.out.println("Original array is:");
 		for(int i = 0; i < 10; i++)
 			System.out.print(" " + nums[i]);
 		System.out.println();
-		
+
 		sort(nums);
-		
+
 		System.out.println("Sorted array k is:");
 		for(int i = 0; i < 10; i++)
 			System.out.print(" " + nums[i]);
@@ -22,7 +23,7 @@ public class Bubble {
 	// We are able to define the method that modifies the array in the main class
 	public static void sort (int arr[]) {
 		int t, size = arr.length;
-		
+
 		// Performing BubbleSort
 		for(int i = 0; i < size; i++)
 			for(int j = size - 1; j >= i + 1; j--) {
