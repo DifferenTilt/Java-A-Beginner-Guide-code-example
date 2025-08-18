@@ -1,3 +1,4 @@
+package chapter05;
 // a simple automated telephone directory.
 
 public class Phone {
@@ -11,10 +12,10 @@ public class Phone {
 				{"Jon", "555-1076"},
 				{"Rachel", "555-1400"}
 		};
-		
+
 		int i;
-		
-		if (args.length != 1) 
+
+		if (args.length != 1)
 			System.out.println("Usage: java Phone <name>");
 		else {
 			for(i = 0; i < numbers.length; i++) {// Here we cycle on the first dimension
