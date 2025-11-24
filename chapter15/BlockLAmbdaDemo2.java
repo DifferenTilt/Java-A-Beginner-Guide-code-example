@@ -1,6 +1,6 @@
 package chapter15;
 
-public class BlockLAmbdaDemo2 {
+public class BlockLambdaDemo2 {
 
 	public static void main(String[] args) {
 
